@@ -3,6 +3,9 @@ import LoginForm from './components/LoginForm';
 import Welcome from './components/Welcome';
 
 function App() {
+  console.log('log'); // ✅ Printed
+  console.info('info'); // ✅ Printed
+  console.error('error'); // ❌ Not printed
   const [isAuthed, setIsAuthed] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const [username, setUsername] = useState('');
